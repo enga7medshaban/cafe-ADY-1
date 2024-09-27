@@ -1,0 +1,228 @@
+/* cafe.css */
+
+/* إعادة تعيين بعض الأنماط الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* أنماط أساسية */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333; /* خلفية داكنة للهيدر */
+    color: #fff; /* لون النص أبيض */
+    padding:5px; /* إضافة حشوة حول النص */
+    text-align: center; /* محاذاة النص في المنتصف */
+    position: relative; /* تحديد الموقع بالنسبة للعنصر الأب */
+}
+
+header .logo {
+    width: 80px; /* عرض الشعار */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    display: block; /* عرض الشعار ككتلة */
+    margin: 0 auto; /* محاذاة الشعار في المنتصف */
+}
+
+header h1 {
+    margin: 0; /* إزالة الهوامش حول العنوان */
+}
+
+.menu-toggle {
+    font-size: 1.5rem; /* حجم الخط لأيقونة القائمة */
+    cursor: pointer; /* تغيير المؤشر عند التمرير على الأيقونة */
+    position: absolute; /* تحديد الموقع بشكل مطلق */
+    top: 1rem; /* المسافة من الأعلى */
+    right: 1rem; /* المسافة من اليمين */
+    color: #fff; /* لون النص أبيض */
+}
+
+/* قائمة الشريط الجانبي */
+.sidebar {
+    background: #444; /* خلفية داكنة للقائمة الجانبية */
+    color: #fff; /* لون النص أبيض */
+    width: 250px; /* عرض القائمة الجانبية */
+    height: 100%; /* ملء الشاشة ارتفاعًا */
+    position: fixed; /* تحديد الموقع بشكل ثابت */
+    top: 0; /* المسافة من الأعلى */
+    left: -250px; /* إخفاء القائمة الجانبية خارج الشاشة */
+    padding-top: 60px; /* إضافة حشوة من الأعلى */
+    display: flex; /* استخدام نظام الفليكس لعرض العناصر بشكل عمودي */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    transition: left 0.3s ease; /* تأثير الانتقال عند تغيير الموقع */
+}
+
+.sidebar.active {
+    left: 0; /* عرض القائمة الجانبية */
+}
+
+.sidebar a {
+    color: #fff; /* لون النص أبيض */
+    padding: 1rem; /* إضافة حشوة حول الروابط */
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    display: block; /* عرض الروابط ككتلة */
+    border-bottom: 1px solid #555; /* خط فاصل أسفل الروابط */
+}
+
+.sidebar a:hover {
+    background: #555; /* تغيير خلفية الرابط عند التمرير عليه */
+}
+
+/* محتوى الصفحة الرئيسية */
+main {
+    margin-left: 0; /* إزالة المسافة من اليسار */
+    padding: 10px; /* إضافة حشوة حول المحتوى */
+    transition: margin-left 0.3s ease; /* تأثير الانتقال عند تغيير المسافة من اليسار */
+}
+
+main.sidebar-active {
+    margin-left: 250px; /* إضافة مسافة لعرض القائمة الجانبية */
+}
+
+h2 {
+    color: #333; /* لون النص الداكن للعناوين */
+    margin-bottom: 20px; /* إضافة مسافة أسفل العناوين */
+}
+.buy-button {
+    background-color: #363634; /* لون الزر */
+    color: white; /* لون النص */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* الزوايا الدائرية */
+    transition: background-color 0.3s ease; /* تأثير التغيير في اللون */
+}
+
+.buy-button:hover {
+    background-color: #b36d27; /* لون مختلف عند تمرير الماوس */
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* المسافة بين العناصر */
+    justify-content: center; /* توسيط العناصر */
+}
+
+.drink-item {
+    background-color: #f4f4f4; /* لون خلفية العنصر */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px; /* ضبط حجم العنصر */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل العنصر */
+}
+
+.drink-image {
+    width: 100%; /* جعل الصورة ملء العنصر */
+    border-radius: 10px; /* جعل الزوايا دائرية */
+    margin-bottom: 10px;
+}
+/* زر إضافة إلى السلة */
+.add-to-cart {
+    background-color: #333; /* خلفية داكنة للزر */
+    color: #fff; /* لون النص أبيض */
+    border: none; /* إزالة الحدود من الزر */
+    padding: 10px; /* إضافة حشوة حول النص */
+    border-radius: 5px; /* تدوير زوايا الزر */
+    cursor: pointer; /* تغيير المؤشر عند التمرير على الزر */
+    font-size: 1.9rem; /* حجم الخط داخل الزر */
+    display: flex; /* استخدام نظام الفليكس لعرض العناصر داخل الزر */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    gap: 5px; /* إضافة مسافة بين الأيقونة والنص */
+    transition: background-color 0.3s ease; /* تأثير الانتقال عند تغيير الخلفية */
+}
+
+.add-to-cart:hover {
+    background-color: #000000; /* تغيير خلفية الزر عند التمرير عليه */
+}
+
+.add-to-cart i {
+    font-size: 5rem; /* حجم الأيقونة */
+}
+/* تنسيق الأقسام */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section:hover {
+    background-color: #55514e; /* لون مختلف عند تمرير الماوس */
+}
+/* تنسيق العناوين */
+h2 {
+    font-size: 30px;
+    color: #7a6008;
+    margin-bottom: 10px;
+ 
+}
+
+/* تنسيق النصوص */
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* تنسيق القسم الخاص بالعناوين */
+#Address p, #contact p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* إضافة بعض الألوان للأقسام */
+#about {
+    background-color: #f8f9fa;
+}
+
+#Address {
+    background-color: #e9ecef;
+}
+
+#contact {
+    background-color: #dee2e6;
+}
+
+/* تنسيق الروابط (في حال إضافتها لاحقاً) */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .drink-item {
+        width: 100%; /* Make drink items full width */
+    }
+
+    header .logo {
+        width: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    .menu-toggle {
+        font-size: 1.2rem; /* Smaller icon for mobile */
+    }
+}

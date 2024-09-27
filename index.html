@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Café</title>
+    <link rel="stylesheet" href="css/cafe.css">
+</head>
+<body>
+
+<header>
+    <img src="../mg/log.jpg" alt="Abu Café Logo" class="logo">
+    <h1>Abu Café</h1>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<nav class="sidebar">
+    <a href="#cold-drinks">Cold Drinks</a>
+    <a href="#hot-drinks">Hot Drinks</a>
+    <a href="#about">About the Café</a>
+    <a href="#Address">Address</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<main>
+    <section id="hot-drinks">
+        <h2>HOT Drinks</h2>
+        <div class="gallery">
+            <div class="drink-item" data-index="0">
+                <img src="mg/h1.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+                <div class="drink-details">
+                    <h3>Drink Name 1</h3>
+                    <p>Price: 20 EGP</p>
+                    <p>Ingredients: ...</p>
+                    <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+                </div>
+            </div>
+            <!-- Add additional drink items here -->
+            <div class="drink-item" data-index="0">
+                <img src="mg/h2.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+                <div class="drink-details">
+                    <h3>Drink Name 1</h3>
+                    <p>Price: 20 EGP</p>
+                    <p>Ingredients: ...</p>
+                    <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+                </div>
+                
+        </div>
+        <!-- Add additional drink items here -->
+        <div class="drink-item" data-index="0">
+            <img src="mg/h3.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+            <!-- Add additional drink items here -->
+        <div class="drink-item" data-index="0">
+            <img src="mg/h4.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+         <!-- Add additional drink items here -->
+         <div class="drink-item" data-index="0">
+            <img src="mg/h5.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+         <!-- Add additional drink items here -->
+         <div class="drink-item" data-index="0">
+            <img src="mg/h6.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+         <!-- Add additional drink items here -->
+         <div class="drink-item" data-index="0">
+            <img src="mg/h7.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+         <!-- Add additional drink items here -->
+         <div class="drink-item" data-index="0">
+            <img src="mg/h8.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+          <!-- Add additional drink items here -->
+          <div class="drink-item" data-index="0">
+            <img src="mg/h9.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+           <!-- Add additional drink items here -->
+           <div class="drink-item" data-index="0">
+            <img src="mg/h10.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+           <!-- Add additional drink items here -->
+           <div class="drink-item" data-index="0">
+            <img src="mg/h12.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+           <!-- Add additional drink items here -->
+           <div class="drink-item" data-index="0">
+            <img src="mg/h1.jpg" alt="Cold Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cold-drinks">
+        <h2>cold Drinks</h2>
+        <div class="gallery">
+            <div class="drink-item" data-index="0">
+                <img src="mg/c1.jpg" alt="cold Drink 1" class="drink-image" onclick="nextImage(this)">
+                <div class="drink-details">
+                    <h3>Drink Name 1</h3>
+                    <p>Price: 20 EGP</p>
+                    <p>Ingredients: ...</p>
+                    <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+                </div>
+            </div>
+            <!-- Add additional drink items here -->
+            <div class="drink-item" data-index="0">
+                <img src="mg/c5.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+                <div class="drink-details">
+                    <h3>Drink Name 1</h3>
+                    <p>Price: 20 EGP</p>
+                    <p>Ingredients: ...</p>
+                    <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+                </div>
+        </div>
+          <!-- Add additional drink items here -->
+          <div class="drink-item" data-index="0">
+            <img src="mg/c3.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+            <div class="drink-details">
+                <h3>Drink Name 1</h3>
+                <p>Price: 20 EGP</p>
+                <p>Ingredients: ...</p>
+                <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+            </div>
+    </div>
+      <!-- Add additional drink items here -->
+      <div class="drink-item" data-index="0">
+        <img src="mg/c4.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+        <div class="drink-details">
+            <h3>Drink Name 1</h3>
+            <p>Price: 20 EGP</p>
+            <p>Ingredients: ...</p>
+            <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+        </div>
+</div>
+  <!-- Add additional drink items here -->
+  <div class="drink-item" data-index="0">
+    <img src="mg/c2.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+    <div class="drink-details">
+        <h3>Drink Name 1</h3>
+        <p>Price: 20 EGP</p>
+        <p>Ingredients: ...</p>
+        <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+    </div>
+</div>
+  <!-- Add additional drink items here -->
+  <div class="drink-item" data-index="0">
+    <img src="mg/c6.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+    <div class="drink-details">
+        <h3>Drink Name 1</h3>
+        <p>Price: 20 EGP</p>
+        <p>Ingredients: ...</p>
+        <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+    </div>
+</div>
+  <!-- Add additional drink items here -->
+  <div class="drink-item" data-index="0">
+    <img src="mg/c7.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+    <div class="drink-details">
+        <h3>Drink Name 1</h3>
+        <p>Price: 20 EGP</p>
+        <p>Ingredients: ...</p>
+        <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+    </div>
+</div>
+  <!-- Add additional drink items here -->
+  <div class="drink-item" data-index="0">
+    <img src="mg/c8.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+    <div class="drink-details">
+        <h3>Drink Name 1</h3>
+        <p>Price: 20 EGP</p>
+        <p>Ingredients: ...</p>
+        <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+    </div>
+</div>
+<div class="drink-item" data-index="0">
+    <img src="mg/c9.jpg" alt="Hot Drink 1" class="drink-image" onclick="nextImage(this)">
+    <div class="drink-details">
+        <h3>Drink Name 1</h3>
+        <p>Price: 20 EGP</p>
+        <p>Ingredients: ...</p>
+        <button class="buy-button" onclick="addToCart('Drink Name 1')">Add to Cart 🛒</button>
+    </div>
+</div>
+    </section>
+
+    <section id="about">
+        <h2>About the Café</h2>
+        <p>Located in the heart of Mansoura, Abu Café offers a unique blend of tradition and modernity, creating a cozy and welcoming environment for all our guests. Our menu features a carefully curated selection of hot and cold beverages, each crafted with the finest ingredients to ensure an exceptional taste experience. Whether you're in the mood for a rich, aromatic coffee or a refreshing cold drink, Abu Café is the perfect place to relax and enjoy a delightful beverage.
+        </p>
+    </section>
+        <section id="Address">
+        <h2>Address</h2>
+        <p>
+            Abu Café,<br>
+            Mansoura, Egypt</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>To contact us, you can call: 0106226249</p>
+        <p>a7medshaban0@jmil.com</p>
+        
+        
+    </section>
+</main>
+
+<footer>
+    <p>Eng-a7med_shaban0</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
